@@ -1,40 +1,35 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<html lang="en">
+  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
- <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-
-
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="shortcut icon" href="images/title.png">
   <title>0x11</title>
   <style>
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+       }
 
-  main {
-    flex: 1 0 auto;
-  }
-  img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9; /* ie8 */
-  }
+      main {
+        flex: 1 0 auto;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        width: auto\9; /* ie8 */
+      }
   </style>
 </head>
 <!NAVIGATION BAR>
 
 <!THIS IS THE BODY>
-<body bgcolor = "gray" !background = "back.jpg">
+<body bgcolor = "#bdbdbd" !background = "back.jpg">
   <header>
     <nav>
       <div class="navbar nav-wrapper teal darken-2 ">
@@ -630,6 +625,8 @@ $(document).ready(function () {
   $(".dropdown-button").dropdown();
   $('.collapsible').collapsible();
   $('.modal-trigger').leanModal();
+   $('#modal1').openModal();
+   $('#modal1').closeModal();
 });
 </script>
 </body>
