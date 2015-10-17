@@ -1,0 +1,107 @@
+<html>
+<head>
+
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="images/title.png" />
+  <title>Photos</title>
+  <style >
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+  }
+  </style>
+</head>
+
+<body bgcolor=#212121>
+  <header>
+    <nav>
+      <div class="navbar-fixed nav-wrapper teal darken-2">
+        <a href="#" class="brand-logo center">Photos</a>
+        <a href="#" data-activates="mobile-demo" class="waves-effect waves-light button-collapse"><i class="container material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li !class="active"><a class="waves-effect waves-light"href="index.html">Home<!span class="new badge"></span></a></li>
+          <li !class="active"><a class="waves-effect waves-light"href="about.html">About</a></li>
+          <li !class="active"> <a class="btn waves-effect waves-light" onclick="Materialize.toast('Cane', 4000, 'rounded')">Sugar</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+         <a href="index.html"><img class="center"src="images/0x11.png" id="logo"width="200"height="200"></a>
+         <li style="margin-top: 150px;"><a href="about.html">About</a></li>
+         <li><a href="update.html">Updates</a></li>
+         <li><a href="help.html">Help</a></li>
+       </ul>
+     </form>
+   </div>
+ </nav>
+</header>
+
+<!FIX THIS SWITCH!>
+<div class="hide switch">
+  <label>
+    Off 
+    <input type="checkbox" onClick="document.bgColor = 'white';">
+    <span class="lever"></span>
+
+    On
+  </label>
+</div>
+
+<center>
+ <h1></h1>
+ <img class="materialboxed"data-caption="What up" width="650" src="images/003.jpg">
+ <p>
+   <img class="materialboxed" width="650" src="images/004.jpg">
+   <p>
+     <img class="materialboxed" width="650" src="images/005.jpg">
+     <p>
+       <img class="materialboxed" width="650" src="images/006.jpg">
+       <p>
+         <img class="materialboxed" width="650" src="images/007.jpg">
+         <p>
+           <img class="materialboxed" width="650" src="images/008.jpg">
+           <p>
+             <img class="materialboxed" width="650" src="images/009.jpg">
+
+             <div class="progress">
+              <div class="indeterminate"></div>
+            </div>
+            <footer class="teal darken-2 page-footer">
+              <div class="footer-copyright">
+                Taken from an iPhone 4s
+<script language="Javascript">
+    document.write("Last modified on: " + document.lastModified +"");
+    </script>
+              </div>
+            </footer>
+
+          </center>
+
+
+  <!--Import jQuery before materialize.js-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+          <script>
+          $(document).ready(function(){
+            $(".button-collapse").sideNav();
+            $("select").material_select();
+            $(".dropdown-button").dropdown();
+             $('.slider').slider({full_width: true});
+          });
+          </script>
+        </body>
+        </html>

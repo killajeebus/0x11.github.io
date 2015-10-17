@@ -1,0 +1,127 @@
+<html>
+<head>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="images/title.png">
+  <title>About</title>
+  <script>
+  </script>
+</head>
+
+<body !background="backg.jpg">
+  <!--Import jQuery before materialize.js-->
+  <header>
+    <nav>
+      <div class="navbar-fixed nav-wrapper teal darken-2">
+        <a href="#" class="brand-logo center">About</a>
+        <a href="#" data-activates="mobile-demo" class=" waves-effect waves-light button-collapse"><i class="container material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+         <li ><a class="waves-effect waves-light" href="index.html">Home</a></li>
+         <li><a class="waves-effect waves-light" href="photos.html">Photos<!span class="new badge"></span></a></li>
+         <li> <a class="btn waves-effect waves-light" onclick="Materialize.toast('Cause I Can', 4000)">Howcome?</a></li>
+       </ul>
+       <ul class="side-nav" id="mobile-demo">
+        <a href="index.html"><img class="center"src="images/0x11.png" id="logo"width="200"height="200"></a>
+        <li style="margin-top: 150px;"><a href="photos.html">Photos</a></li>
+        <li><a href="update.html">Updates</a></li>
+        <li><a href="help.html">Help</a></li>
+      </ul>
+    </form>
+  </div>
+</nav>
+</header> 
+<main>
+  <font !color="white"> 
+    <!p style="font-size:150%; color:white;"></p>
+  </font>
+
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/paral1.jpg" style="display: block;"></div>
+  </div>
+  <div class="section white center">
+    <div class="row container">
+      <h2 class="header">The Purpose of This Site</h2>
+      <p class="grey-text text-darken-3 lighten-3">My name is Jesus, I made this site to let other people know(in this case some of my friends) about the good music I listen to. This site gathers almost all of those artists (hipop,rap,indie,lo-fi,allah,pop, like all genres sorta), some left aside because they are too mainstream, meaning that the people viewing this are likely fans or have heard music from those 'mainstream' artists. Nothing wrong with seemingly mainstream media, but the focus of this site is to expose those lesser known artists/bands. Surely some included in this site are far above from being underground(indie is the term right?) but those have been selected by myself and think of them as possibly honorable mentions. I could have just written a list on a text document and send it to people but thats boring.</p>
+      <p>Y0u came this far.</p>
+      <p>Big thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> for the framework.</p>
+
+       <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Notice</a>
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>The Site</h4>
+      <p>I hereby declare that the music embedded within this site is not my property(unless stated) but property of their entitled owners, which I am freely presenting to an audience in terms of entartainment and no monetaization. This notice is for any legal issues, but I doubt my page will get that popular, if it does, I'll expand this segment.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Ok</a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="images/paral2.jpg" style="display: block;"></div>
+  </div>
+</center>
+</main>
+<footer class="page-footer teal darken-2">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Thanks for stopping by</h5>
+        <p class="grey-text text-lighten-4">Have any questions? ask yourself those.</p>
+        <p class="grey-text text-lighten-4">
+          Thanks to <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+        </p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">
+         <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Contact</a>
+         <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="https://twitter.com/killajeebus">Twitter</a></li>
+          <li class="divider"></li>
+          <li><a href="https://www.facebook.com/killajeebus">Facebook</a></li>
+          <li class="divider"></li>
+          <li><a href="http://steamcommunity.com/profiles/76561198059432500/">Steam</a></li>
+        </ul>
+
+
+      </h5>
+      <ul>
+        <li><a class="grey-text text-lighten-3" href="update.html">Updates</a></li>
+        <li><a class="grey-text text-lighten-3" href="help.html">Need Help?</a></li>
+      </ul>
+    </div>
+
+  </h5>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+  <div class="container">
+    © 2015 killajeebus 
+    <script language="Javascript">
+    document.write("Last modified on: " + document.lastModified +"");
+    </script>
+  </div>
+</div>
+</footer>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+<script>
+ $(document).ready(function () {
+    $('.button-collapse').sideNav();
+    $("select").material_select();
+   $(".dropdown-button").dropdown();
+   $('.collapsible').collapsible();
+    $('#modal1').openModal();
+   $('#modal1').closeModal();
+   $('.modal-trigger').leanModal();
+  });
+</script>
+</body>
+</html>
