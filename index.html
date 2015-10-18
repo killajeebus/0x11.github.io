@@ -27,11 +27,7 @@
       main {
         flex: 1 0 auto;
       }
-      img {
-        max-width: 100%;
-        height: auto;
-        width: auto\9; /* ie8 */
-      }
+     
   </style>
 </head>
 <!NAVIGATION BAR>
@@ -40,7 +36,7 @@
 <body bgcolor = "#bdbdbd" !background = "back.jpg">
   <header>
     <nav>
-      <div class="navbar nav-wrapper teal darken-2 ">
+      <div class="z-depth-3 navbar nav-wrapper teal darken-2 ">
         <a href="#" class="brand-logo center">Music Dud3 <font size="1">beta</font></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
          <li><a class="waves-effect waves-light"href="about.html">About</a></li>
@@ -51,10 +47,10 @@
        <a href="#" data-activates="mobile-demo" class="waves-effect waves-light button-collapse"><i class="container mdi-navigation-menu"></i></a>
        <ul class="side-nav" id="mobile-demo">
         <a href="index.html"><img class="center"src="images/0x11.png" id="logo"width="200"height="200"></a>
-        <li style="margin-top: 150px;"><a href="about.html">About</a></li>
-        <li><a href="photos.html">Photos</a></li>
-        <li><a href="update.html">Updates</a></li>
-        <li><a href="help.html">Help</a></li>
+        <li style="margin-top: 150px;"><a class="waves-effect waves-teal"href="about.html">About</a></li>
+        <li><a class="waves-effect waves-teal"href="photos.html">Photos</a></li>
+        <li><a class="waves-effect waves-teal"href="update.html">Updates</a></li>
+        <li><a class="waves-effect waves-teal"href="help.html">Help</a></li>
       </ul>
     </form>
   </div>
@@ -65,7 +61,7 @@
    <marquee>Hey what's up, how's the weather?</marquee>
    <!MAIN PICTURE>
    <div style="max-width:450px;"class="container">
-    <img class = "materialboxed" data-caption="Fuck, this shit looks retarded!"src = "images/mix12.png">
+    <img class = "responsive-img materialboxed" data-caption="I drew dis."src = "images/mix12.png">
   </div>
   <div class="container">
    <h2><center>A Music List for Ya</center></h2>
@@ -110,16 +106,16 @@
           <div class="collapsible-header white-text teal darken-2"><h5>A</h5></div>
         </li>
         <li>
-          <div class="collapsible-header">
-Absynthe Minded</div>
-          <div class="collapsible-body"><p></p>
+          <div class="collapsible-header">Absynthe Minded</div>
+          <div class="video-container collapsible-body"><p><iframe src="https://embed.spotify.com/?uri=spotify:album:18Ts8E74XrG1IWXujnMeIT&theme=white" width="500" height="580" frameborder="0" allowtransparency="true"></iframe></p>
           </div>
 
         </li>
         <li>
           <div class="collapsible-header"><i class="material-icons">thumb_up</i>The Aquadolls</div>
-          <div class="collapsible-body container"><p><iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=1491790577/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="http://theaquadolls.bandcamp.com/album/stoked-on-you">stoked on you by the aquadolls</a></iframe>
-          </p></div>
+          <div class="video-container collapsible-body"><p><iframe width="500"height="472" src="https://bandcamp.com/EmbeddedPlayer/album=1491790577/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="http://theaquadolls.bandcamp.com/album/stoked-on-you">stoked on you by the aquadolls</a></iframe>
+          </p>
+        </div>
         </li>
       </ul>
     </div>
@@ -132,7 +128,7 @@ Absynthe Minded</div>
         <li>
           <div class="collapsible-header">
 Beach Pigs</div>
-          <div class="collapsible-body container"><p></p></div>
+          <div class="collapsible-body"><p></p></div>
         </li>
         <li>
           <div class="collapsible-header">
@@ -607,11 +603,11 @@ Los Zafiros</div>
            <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Clicke MEH</a>
             <div id="modal1" class="modal">
               <div class="black modal-content">
-                <h4 class="white-text black center">Y0u have be3n sp0oq3d</h4>
+                <h4 class="preloader-wrapper active white-text black container">Y0u have be3n sp0oq3d</h4>
                 <p><center><img class="black container"src="images/doot.gif"></center></p>
               </div>
               <div class="black modal-footer">
-                <a href="#!" class="modal-action white-text modal-close waves-effect waves-green btn-flat">Exit Now or calcim defishinsea!</a>
+                <a href="#!" class="container modal-action white-text modal-close waves-effect waves-green btn-flat">Exit Now or calcim defishinsea!</a>
               </div>
             </div>
         </li>
@@ -628,7 +624,7 @@ Los Zafiros</div>
     <script language="Javascript">
     document.write("Last modified on: " + document.lastModified +"");
     </script>
-    <a class="grey-text text-lighten-4 right" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Bruh
+    <a class="grey-text text-lighten-4 right" href="http://rick.amigocraft.net/">Bruh
     </a>
   </div>
 </div>
